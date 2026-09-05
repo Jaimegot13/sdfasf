@@ -1,0 +1,35 @@
+{
+    "outbounds": [
+        {
+            "protocol": "vmess",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "18.185.193.227",
+                        "port": 443,
+                        "users": [
+                            {
+                                "alterId": 0,
+                                "id": "a7ae59ce-1184-4a0f-92bf-8be78c771e9b"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": true,
+                    "serverName": "api.openai.com"
+                },
+                "wsSettings": {
+                    "headers": {
+                        "Host": "bypass.lovlingo.app"
+                    },
+                    "path": "/v2ray"
+                }
+            }
+        }
+    ]
+}
